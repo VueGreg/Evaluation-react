@@ -1,1 +1,0 @@
-const backend_url = "http://localhost:4555"

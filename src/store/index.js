@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit'
-//import  todoListReducer  from '../components/TodoList/todoListSlice.js'
+import userReducer from './slices/userSlice.js'
 
 export default configureStore({
   reducer: {
-    //todoList: todoListReducer,
+    user: userReducer,
   },
 })

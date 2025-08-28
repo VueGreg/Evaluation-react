@@ -1,9 +1,17 @@
-const AdminPage = () => {
-  return (
-    <main className="flex w-[100vw]">
-        <h1>Page d'administration</h1>
-    </main>
-  )
-}
+import { Outlet } from 'react-router-dom';
+import { SliderComponent } from '../components';
 
-export default AdminPage
+const AdminPage = () => {
+
+  return (
+    <div className="flex">
+      <SliderComponent />
+
+      <main className="flex-1 p-8">
+        <Outlet />
+      </main>
+    </div>
+  );
+};
+
+export default AdminPage;
